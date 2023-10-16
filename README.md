@@ -39,65 +39,68 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone this repository:
 
-   https://github.com/msjbhinder55/calculator-web-app.git
-   
-   cd calculator-web-app
+   git clone https://github.com/yourusername/mern-calculator.git
+   cd mern-calculator
 
-   Install server dependencies:
+2. Install server dependencies:
+
    cd server
    npm install
 
-   Install client dependencies:
+3. Install client dependencies:
+
    cd client
    npm install
+
+### Configuration
+
+1. Create a `.env` file in the `server` directory and configure the following environment variables:
+
+   PORT=5000
+   MONGODB_URI=your-mongodb-connection-string
    
-###Configuration
+### Running the Application
 
-Create a .env file in the server directory and configure the following environment variables:
+1. Start the server:
 
-PORT=5000
-MONGODB_URI=your-mongodb-connection-string
+   cd server
+   npm start
 
-###Running the Application
-Start the server:
+2. Start the client:
 
-cd server
-npm start
+   cd client
+   npm start
 
-Start the client:
+## Project Structure
 
-cd client
-npm start
-
-
-##Project Structure
 The project is structured as follows:
 
--client: React front-end application.
--server: Node.js and Express back-end server.
--client/public: Static assets and index.html.
--client/src: React components and application logic.
--server/routes: Express route definitions.
--server/models: Mongoose models for the MongoDB database.
--server/controllers: Logic for handling API requests.
+- `client`: React front-end application.
+- `server`: Node.js and Express back-end server.
+- `client/public`: Static assets and index.html.
+- `client/src`: React components and application logic.
+- `server/routes`: Express route definitions.
+- `server/models`: Mongoose models for the MongoDB database.
+- `server/controllers`: Logic for handling API requests.
 
+## Technical Details
 
-##Technical Details
+- Front-End: React, Axios
+- Back-End: Node.js, Express
+- Database: MongoDB with Mongoose
+- Version Control: Git and GitHub
 
--Front-End: React, Axios
--Back-End: Node.js, Express
--Database: MongoDB with Mongoose
--Version Control: Git and GitHub
+## Contributing
 
-
-##Contributing
 Contributions to this project are welcome! Here's how you can get involved:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Implement your changes and test thoroughly.
 4. Submit a pull request to the main repository.
-5. Please refer to the Contribution Guidelines for more details.
 
-##License
-This project is licensed under the MIT License.
+Please refer to the [Contribution Guidelines](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
